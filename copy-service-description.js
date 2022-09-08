@@ -3,6 +3,8 @@ function UpdateWebdesignServiceDescription(elemento) {
     let webdesignServiceDescription = document.getElementById("webdesign-service-description");
     // The custom code is placed inside an embed objt so we select it
     let elementParent = elemento.parentNode;
+    // Then we select the select service wrapper
+    elementParent = elementParent.parentNode;
     // Then we select the buttons wrapper parent
     elementParent = elementParent.parentNode;
     // Then we select the parent of the entire cms item
