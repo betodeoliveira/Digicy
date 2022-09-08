@@ -19,7 +19,7 @@ function UpdateWebdesignServiceDescription(elemento) {
             // Now we wait the description animation and update the element content
             setTimeout(function() {
                 webdesignServiceDescription.innerHTML = elementParent.childNodes[i].innerHTML;
-            }, 2500);
+            }, 250);
             break;
         }
     }
