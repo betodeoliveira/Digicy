@@ -9,7 +9,7 @@ function UpdateWebdesignServiceDescription(elemento) {
     elementParent = elementParent.parentNode;
     // We find the element that has the content about the job offer
     for (var i = 0; i < elementParent.childNodes.length; i++) {
-        console.log(elementParent.childNodes[i].className);
+        // console.log(elementParent.childNodes[i].className);
         if (
             elementParent.childNodes[i].className ==
             "rich-text-services is-hide w-richtext"
