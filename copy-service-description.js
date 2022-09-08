@@ -16,8 +16,10 @@ function UpdateWebdesignServiceDescription(elemento) {
             elementParent.childNodes[i].className ==
             "rich-text-services is-hide w-richtext"
         ) {
-            // Now we update the element content
-            webdesignServiceDescription.innerHTML = elementParent.childNodes[i].innerHTML;
+            // Now we wait the description animation and update the element content
+            setTimeout(function() {
+                webdesignServiceDescription.innerHTML = elementParent.childNodes[i].innerHTML;
+            }, 2500);
             break;
         }
     }
