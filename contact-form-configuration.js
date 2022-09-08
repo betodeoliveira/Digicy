@@ -1,12 +1,13 @@
+let contactServiceInput = document.getElementById("Service");
+
+function SetContactService(serviceName) {
+    contactServiceInput.value = serviceName;
+}
+
 $(document).ready(function () {
-    let contactServiceInput = document.getElementById("Service");
-    let openBookMeetingPage = true;
     const $contactSubmit = $("#contact-submit");
     const $contactSubmitAndBook = $("#contact-submit-and-book");
-
-    function SetContactService(serviceName) {
-        contactServiceInput.value = serviceName;
-    }
+    let openBookMeetingPage = true;
     
     $contactSubmit.click(function (e) {
         openBookMeetingPage = false;
