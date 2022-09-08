@@ -9,7 +9,7 @@ $(document).ready(function () {
     const $contactSubmitAndBook = $("#contact-submit-and-book");
     let openBookMeetingPage = true;
     
-    $contactSubmit.click(function (e) {
+    $contactSubmit.onclick(function (e) {
         openBookMeetingPage = false;
         $contactSubmit.click();
     });
