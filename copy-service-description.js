@@ -1,3 +1,29 @@
+$(document).ready(function() {
+    // Finds the website service description
+    let websiteServiceDescription = document.getElementById("webdesign-service-description");
+    // Finds all website descriptions references
+    let websiteRichtextReference = document.getElementsByClassName("rich-text-services is-website-reference");
+    // Set the first reference under the description
+    websiteServiceDescription.innerHTML = websiteRichtextReference[0].innerHTML;
+
+    // Finds the digital service description
+    let digitalServiceDescription = document.getElementById("digital-service-description");
+    // Finds all digital descriptions references
+    let digitalRichtextReference = document.getElementsByClassName("rich-text-services is-digital-reference");
+    // Set the first reference under the description
+    digitalServiceDescription.innerHTML = digitalRichtextReference[0].innerHTML;
+
+    // Finds all website select service buttons
+    let websiteSelectServiceBtn = document.getElementsByClassName("services_select-service is-website");
+    // Do a click to play the webflow interaction on the first button
+    websiteSelectServiceBtn[0].click();
+
+    // Finds all digital select service buttons
+    let digitalSelectServiceBtn = document.getElementsByClassName("services_select-service is-digital");
+    // Do a click to play the webflow interaction on the first button
+    digitalSelectServiceBtn[0].click();
+});
+
 function UpdateWebdesignServiceDescription(elemento) {
     // Gets the element that will receive the content about the job offer
     let websiteServiceDescription = document.getElementById("webdesign-service-description");
@@ -51,19 +77,3 @@ function UpdateDigitalServiceDescription(elemento) {
         }
     }
 }
-
-$(document).ready(function() {
-    let websiteServiceDescription = document.getElementById("webdesign-service-description");
-    let websiteRichtextReference = document.getElementsByClassName("rich-text-services is-website-reference");
-    websiteServiceDescription.innerHTML = websiteRichtextReference[0].innerHTML;
-
-    let websiteSelectServiceBtn = document.getElementsByClassName("services_select-service is-website");
-    websiteSelectServiceBtn[0].click();
-
-
-    let digitalServiceDescription = document.getElementById("digital-service-description");
-    let digitalRichtextReference = document.getElementsByClassName("rich-text-services is-digital-reference");
-    digitalServiceDescription.innerHTML = digitalRichtextReference[0].innerHTML;
-
-    
-});
