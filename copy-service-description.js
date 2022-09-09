@@ -55,6 +55,15 @@ function UpdateDigitalServiceDescription(elemento) {
 $(document).ready(function() {
     let websiteServiceDescription = document.getElementById("webdesign-service-description");
     let websiteRichtextReference = document.getElementsByClassName("rich-text-services is-website-reference");
-
     websiteServiceDescription.innerHTML = websiteRichtextReference[0].innerHTML;
+
+    let websiteSelectServiceBtn = document.getElementsByClassName("services_select-service is-website");
+    websiteSelectServiceBtn[0].click();
+
+
+    let digitalServiceDescription = document.getElementById("digital-service-description");
+    let digitalRichtextReference = document.getElementsByClassName("rich-text-services is-digital-reference");
+    digitalServiceDescription.innerHTML = digitalRichtextReference[0].innerHTML;
+
+    
 });
