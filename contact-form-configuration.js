@@ -4,25 +4,34 @@ function SetContactService(serviceName) {
     contactServiceInput.value = serviceName;
 }
 
+// Keep form height
+$(window).bind("load resize submit",function(e){
+    $('form').each(function() {
+      var formHeight = $(this).height();
+      $(this).siblings('.w-form-done').css({'min-height': formHeight});
+    });
+  }); 
+
 $(document).ready(function () {
-    const $contactSubmit = $("#contact-submit");
+    const $contactForm = $("#contact-form");
+    const $contactJustSubmit = $("#contact-just-submit");
     const $contactSubmitAndBook = $("#contact-submit-and-book");
     let openBookMeetingPage = true;
     
-    $contactSubmit.onclick(function (e) {
+    $contactJustSubmit.click(function (e) {
         openBookMeetingPage = false;
-        $contactSubmit.click();
+        $contactSubmitAndBook.click();
     });
     
-    $contactSubmit.submit(function (e) {
+    $contactForm.submit(function (e) {
         // If the user wants to book a meeting open the page on a new tab
-        // if(openBookMeetingPage) {
+        if(openBookMeetingPage) {
             window.open('/book-meeting', '_blank');
-        // }
+        }
         // Reset the variable in case the user wants to send another message
-        // else {
-            // openBookMeetingPage = true;
-        // }
+        else {
+            openBookMeetingPage = true;
+        }
         // Submit the form
         return true;
     });
