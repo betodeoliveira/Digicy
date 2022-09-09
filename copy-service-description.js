@@ -1,6 +1,6 @@
 function UpdateWebdesignServiceDescription(elemento) {
     // Gets the element that will receive the content about the job offer
-    let webdesignServiceDescription = document.getElementById("webdesign-service-description");
+    let websiteServiceDescription = document.getElementById("webdesign-service-description");
     // The custom code is placed inside an embed objt so we select it
     let elementParent = elemento.parentNode;
     // Then we select the select service wrapper
@@ -14,11 +14,11 @@ function UpdateWebdesignServiceDescription(elemento) {
         // console.log(elementParent.childNodes[i].className);
         if (
             elementParent.childNodes[i].className ==
-            "rich-text-services is-hide w-richtext"
+            "rich-text-services is-website-reference w-richtext"
         ) {
             // Now we wait the description animation and update the element content
             setTimeout(function() {
-                webdesignServiceDescription.innerHTML = elementParent.childNodes[i].innerHTML;
+                websiteServiceDescription.innerHTML = elementParent.childNodes[i].innerHTML;
             }, 250);
             break;
         }
@@ -41,7 +41,7 @@ function UpdateDigitalServiceDescription(elemento) {
         // console.log(elementParent.childNodes[i].className);
         if (
             elementParent.childNodes[i].className ==
-            "rich-text-services is-hide w-richtext"
+            "rich-text-services is-digital-reference w-richtext"
         ) {
             // Now we wait the description animation and update the element content
             setTimeout(function() {
@@ -50,4 +50,11 @@ function UpdateDigitalServiceDescription(elemento) {
             break;
         }
     }
-} 
+}
+
+$(document).ready(function() {
+    let websiteServiceDescription = document.getElementById("webdesign-service-description");
+    let websiteRichtextReference = document.getElementsByClassName("rich-text-services is-website-reference");
+
+    websiteServiceDescription.innerHTML = websiteRichtextReference[0].innerHTML;
+});
