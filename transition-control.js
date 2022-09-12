@@ -5,7 +5,7 @@ let excludedClass = "no-transition";
   
 // On Page Load
 if (transition.length > 0) {
-	tlTransition.play();
+	tlTransition.reverse();
 	$("body").addClass("no-scroll-transition");
 	setTimeout(() => {$("body").removeClass("no-scroll-transition");}, introDurationMS);
 }
@@ -16,7 +16,7 @@ $("a").on("click", function (e) {
     e.preventDefault();
 		$("body").addClass("no-scroll-transition");
     let transitionURL = $(this).attr("href");
-    tlTransition.reverse(6);
+    tlTransition.play();
     setTimeout(function () {window.location = transitionURL;}, exitDurationMS);
   }
 });
