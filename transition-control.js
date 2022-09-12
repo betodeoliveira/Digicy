@@ -16,7 +16,7 @@ $("a").on("click", function (e) {
     e.preventDefault();
 		$("body").addClass("no-scroll-transition");
     let transitionURL = $(this).attr("href");
-    tlTransition.reverse();
+    tlTransition.reverse(6);
     setTimeout(function () {window.location = transitionURL;}, exitDurationMS);
   }
 });
