@@ -51,7 +51,7 @@ let tl = gsap.timeline({
     scrub: 1
   }
 });
-tl.to(".testimonials .testimonial_list", {
+tl.to(".section_home-testimonials .testimonial_list", {
   x: () => -moveDistance,
   duration: 1
 });

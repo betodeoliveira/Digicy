@@ -1,4 +1,4 @@
 gsap.registerPlugin(DrawSVGPlugin);
 
 let tl2 = gsap.timeline();
-tl.from("#path", {duration: 1, drawSVG: 0}, 0.1);
+tl2.fromTo("#path", {drawSVG: 0}, {durantion: 1, drawSVG: 1});
