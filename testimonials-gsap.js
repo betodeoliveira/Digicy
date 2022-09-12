@@ -3,7 +3,7 @@
 // You have the license to use this code in your projects but not to redistribute it to others
 gsap.registerPlugin(ScrollTrigger);
 let horizontalItem = $(".testimonial_item");
-let horizontalSection = $(".testimonials");
+let horizontalSection = $(".section_home-testimonials");
 let moveDistance;
 function calculateScroll() {
   // Desktop
