@@ -1,6 +1,6 @@
 let transition = $(".transition");
-let introDurationMS = 0;
-let exitDurationMS = 1200;
+let introDurationMS = 2000;
+let exitDurationMS = 2000;
 let excludedClass = "no-transition";
   
 // On Page Load
