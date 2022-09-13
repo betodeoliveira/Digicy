@@ -21,6 +21,7 @@ $(".background-trigger").each(function (index) {
     });
 });
 
+// Updates the background triggers position
 $("#portfolio-loader-more").click(function(){
     ScrollTrigger.refresh();
 });
