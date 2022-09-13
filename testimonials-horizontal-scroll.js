@@ -41,7 +41,7 @@ window.onresize = function () {
   calculateScroll();
 };
 
-let tl = gsap.timeline({
+let tlTestimonials = gsap.timeline({
   scrollTrigger: {
     trigger: ".testimonial_trigger",
     // trigger element - viewport
@@ -51,7 +51,7 @@ let tl = gsap.timeline({
     scrub: 1
   }
 });
-tl.to(".section_home-testimonials .testimonial_list", {
+tlTestimonials.to(".section_home-testimonials .testimonial_list", {
   x: () => -moveDistance,
   duration: 1
 });
