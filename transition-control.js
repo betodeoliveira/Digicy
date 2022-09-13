@@ -21,7 +21,7 @@ $("a").on("click", function (e) {
   }
 });
 // On Back Button Tap
-window.onpageshow = function(event) {if (event.persisted) {window.location.reload()}};
+//window.onpageshow = function(event) {if (event.persisted) {window.location.reload()}};
 // Hide Transition on Window Width Resize
 setTimeout(() => {$(window).on("resize", function () {
 setTimeout(() => {$(".transition").css("display", "none");}, 50);});
