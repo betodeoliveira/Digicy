@@ -23,7 +23,9 @@ $(".background-trigger").each(function (index) {
 
 // To prevent triggers at wrong positions recalculate when page is ready
 $(document).ready(function () {
-    ScrollTrigger.refresh();
+    setTimeout(function(){
+        ScrollTrigger.refresh();
+    }, 2000);
 });
 
 // Updates the background triggers position
