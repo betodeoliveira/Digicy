@@ -21,6 +21,11 @@ $(".background-trigger").each(function (index) {
     });
 });
 
+// To prevent triggers at wrong positions recalculate when page is ready
+$(document).ready(function () {
+    ScrollTrigger.refresh();
+});
+
 // Updates the background triggers position
 $("#portfolio-loader-more").click(function(){
     ScrollTrigger.refresh();
