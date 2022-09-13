@@ -4,7 +4,6 @@ $(".background-trigger").each(function (index) {
         trigger: $(this),
         start: "top center",
         end: "bottom center",
-        markers: true,
         onEnter: () => {
             console.log("change color to: " + $(this).css("background-color"));
             $(".page-background").css("background-color", $(this).css("background-color"));
