@@ -44,10 +44,7 @@ function UpdateWebdesignServiceDescription(elemento) {
     // We find the element that has the content about the job offer
     for (var i = 0; i < elementParent.childNodes.length; i++) {
         // console.log(elementParent.childNodes[i].className);
-        if (
-            elementParent.childNodes[i].className ==
-            "rich-text-services is-website-reference font-color-black-to-white w-richtext"
-        ) {
+        if (elementParent.childNodes[i].id == "webdesign-service-description") {
             // Now we wait the description animation and update the element content
             setTimeout(function() {
                 websiteServiceDescription.innerHTML = elementParent.childNodes[i].innerHTML;
@@ -71,10 +68,7 @@ function UpdateDigitalServiceDescription(elemento) {
     // We find the element that has the content about the job offer
     for (var i = 0; i < elementParent.childNodes.length; i++) {
         // console.log(elementParent.childNodes[i].className);
-        if (
-            elementParent.childNodes[i].className ==
-            "rich-text-services is-digital-reference font-color-black-to-white w-richtext"
-        ) {
+        if (elementParent.childNodes[i].id =="digital-service-description") {
             // Now we wait the description animation and update the element content
             setTimeout(function() {
                 digitalServiceDescription.innerHTML = elementParent.childNodes[i].innerHTML;
