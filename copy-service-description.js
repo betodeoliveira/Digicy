@@ -40,7 +40,7 @@ function UpdateWebdesignServiceDescription(elemento) {
         // console.log(elementParent.childNodes[i].className);
         if (
             elementParent.childNodes[i].className ==
-            "rich-text-services is-website-reference w-richtext"
+            "rich-text-services is-website-reference font-color-black-to-white w-richtext"
         ) {
             // Now we wait the description animation and update the element content
             setTimeout(function() {
@@ -67,7 +67,7 @@ function UpdateDigitalServiceDescription(elemento) {
         // console.log(elementParent.childNodes[i].className);
         if (
             elementParent.childNodes[i].className ==
-            "rich-text-services is-digital-reference w-richtext"
+            "rich-text-services is-digital-reference font-color-black-to-white w-richtext"
         ) {
             // Now we wait the description animation and update the element content
             setTimeout(function() {
