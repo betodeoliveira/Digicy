@@ -15,13 +15,19 @@ $(document).ready(function() {
 
     // Finds all website select service buttons
     let websiteSelectServiceBtn = document.getElementsByClassName("services_select-service is-website");
-    // Do a click to play the webflow interaction on the first button
-    websiteSelectServiceBtn[0].click();
-
+    // If the user is on talet or desktop
+    if(window.screen.width > 767) {
+        // Do a click to play the webflow interaction on the first button
+        websiteSelectServiceBtn[0].click();
+    }
     // Finds all digital select service buttons
     let digitalSelectServiceBtn = document.getElementsByClassName("services_select-service is-digital");
-    // Do a click to play the webflow interaction on the first button
-    digitalSelectServiceBtn[0].click();
+    // If the user is on talet or desktop
+    if(window.screen.width > 767) {
+        // Do a click to play the webflow interaction on the first button
+        digitalSelectServiceBtn[0].click();
+    }
+
 });
 
 function UpdateWebdesignServiceDescription(elemento) {
