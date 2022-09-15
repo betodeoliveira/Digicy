@@ -37,14 +37,15 @@ function UpdateWebdesignServiceDescription(elemento) {
     let elementParent = elemento.parentNode;
     // Then we select the select service wrapper
     elementParent = elementParent.parentNode;
-    // Then we select the buttons wrapper parent
-    elementParent = elementParent.parentNode;
     // Then we select the parent of the entire cms item
     elementParent = elementParent.parentNode;
     // We find the element that has the content about the job offer
     for (var i = 0; i < elementParent.childNodes.length; i++) {
         // console.log(elementParent.childNodes[i].className);
-        if (elementParent.childNodes[i].id == "webdesign-service-description") {
+        if (
+            elementParent.childNodes[i].className ==
+            "rich-text-services is-website-reference font-color-black-to-white w-richtext"
+        ) {
             // Now we wait the description animation and update the element content
             setTimeout(function() {
                 websiteServiceDescription.innerHTML = elementParent.childNodes[i].innerHTML;
@@ -61,14 +62,15 @@ function UpdateDigitalServiceDescription(elemento) {
     let elementParent = elemento.parentNode;
     // Then we select the select service wrapper
     elementParent = elementParent.parentNode;
-    // Then we select the buttons wrapper parent
-    elementParent = elementParent.parentNode;
     // Then we select the parent of the entire cms item
     elementParent = elementParent.parentNode;
     // We find the element that has the content about the job offer
     for (var i = 0; i < elementParent.childNodes.length; i++) {
         // console.log(elementParent.childNodes[i].className);
-        if (elementParent.childNodes[i].id =="digital-service-description") {
+        if (
+            elementParent.childNodes[i].className ==
+            "rich-text-services is-digital-reference font-color-black-to-white w-richtext"
+        ) {
             // Now we wait the description animation and update the element content
             setTimeout(function() {
                 digitalServiceDescription.innerHTML = elementParent.childNodes[i].innerHTML;
