@@ -5,7 +5,7 @@ function SetContactService(serviceName) {
 }
 
 // Open contact form with service empty
-$("set-contact-service-empty").click(function() {
+$(".set-contact-service-empty").click(function() {
     SetContactService('');
 });
 
