@@ -4,6 +4,11 @@ function SetContactService(serviceName) {
     contactServiceInput.value = serviceName;
 }
 
+// Open contact form with service empty
+$("set-contact-service-empty").click(function() {
+    SetContactService('');
+});
+
 // Keep form height
 $(window).bind("load resize submit",function(e){
     $('form').each(function() {
