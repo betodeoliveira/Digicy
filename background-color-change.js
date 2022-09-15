@@ -32,3 +32,7 @@ $(document).ready(function () {
 $("#portfolio-loader-more").click(function(){
     ScrollTrigger.refresh();
 });
+
+$(".services_select-service").click(function(){
+    ScrollTrigger.refresh();
+});
