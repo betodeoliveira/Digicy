@@ -30,9 +30,17 @@ $(document).ready(function () {
 
 // Updates the background triggers position
 $("#portfolio-loader-more").click(function(){
-    ScrollTrigger.refresh();
+    ScrollTrigger.disable();
+    setTimeout(function(){
+        ScrollTrigger.enable();
+        ScrollTrigger.refresh();
+    }, 1000);
 });
 
 $(".services_select-service").click(function(){
-    ScrollTrigger.refresh();
+    ScrollTrigger.disable();
+    setTimeout(function(){
+        ScrollTrigger.enable();
+        ScrollTrigger.refresh();
+    }, 1000);
 });
