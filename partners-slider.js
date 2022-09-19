@@ -12,18 +12,15 @@ document.addEventListener( 'DOMContentLoaded', function() {
       focus: 'center',
       autoplay: "play",
       breakpoints: {
-        991: {
-        	perPage: 3,
-          padding: '10%'
-        },
         767: {
-        	perPage: 2,
-          padding: '10%'
+          perPage: 2,
+          focus: 2,
+          padding: '0%'
         },
         479: {
           perPage: 2,
           focus: 2,
-          padding: '10%'
+          padding: '0%'
         },
       },
       classes: {
