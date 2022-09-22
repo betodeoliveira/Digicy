@@ -32,15 +32,15 @@ $(document).ready(function () {
 $("#portfolio-loader-more").click(function(){
     ScrollTrigger.disable();
     setTimeout(function(){
-        ScrollTrigger.enable();
         ScrollTrigger.refresh();
+        ScrollTrigger.enable();
     }, 1000);
 });
 
 $(".services_select-service").click(function(){
     ScrollTrigger.disable();
     setTimeout(function(){
-        ScrollTrigger.enable();
         ScrollTrigger.refresh();
+        ScrollTrigger.enable();
     }, 1000);
 });
