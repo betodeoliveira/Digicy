@@ -5,17 +5,15 @@ $(".background-trigger").each(function (index) {
         start: "top center",
         end: "bottom center",
         onEnter: () => {
-            // console.log("change color to: " + $(this).css("background-color"));
             $(".page-background").css("background-color", $(this).css("background-color"));
             if($(this).children().length > 0) {
-                $(".set-dark-mode").click();
+                $(".dark-mode-switcher").click();
             }
         },
         onEnterBack: () => {
-            // console.log("change color to: " + $(this).css("color"));
-            $(".page-background").css("background-color", $(this).css("color"));
+            $(".page-background").css("background-color", $(this).css("background-color"));
             if($(this).children().length > 0) {
-                $(".set-light-mode").click();
+                $(".dark-mode-switcher").click();
             }
         }
     });
@@ -25,11 +23,11 @@ $(".background-trigger").each(function (index) {
 $(document).ready(function () {
     setTimeout(function(){
         ScrollTrigger.refresh();
-    }, 2000);
+    }, 1000);
 });
 
 // Updates the background triggers position
-$("#portfolio-loader-more").click(function(){
+$("#portfolio-loader-more").on( "click", function() {
     ScrollTrigger.disable();
     setTimeout(function(){
         ScrollTrigger.enable();
@@ -37,10 +35,10 @@ $("#portfolio-loader-more").click(function(){
     }, 1000);
 });
 
-$(".services_select-service").click(function(){
+$(".services_select-service, .button-circle").on( "click", function() {
     ScrollTrigger.disable();
     setTimeout(function(){
         ScrollTrigger.enable();
         ScrollTrigger.refresh();
-    }, 1000);
+    }, 600);
 });
