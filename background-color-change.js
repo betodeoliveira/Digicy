@@ -7,13 +7,13 @@ $(".background-trigger").each(function (index) {
         onEnter: () => {
             $(".page-background").css("background-color", $(this).css("background-color"));
             if($(this).children().length > 0) {
-                $(".dark-mode-switcher").click();
+                $(this).children().eq(0).click();
             }
         },
         onEnterBack: () => {
             $(".page-background").css("background-color", $(this).css("background-color"));
             if($(this).children().length > 0) {
-                $(".light-mode-switcher").click();
+                $(this).children().eq(0).click();
             }
         }
     });
