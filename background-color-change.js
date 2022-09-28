@@ -13,7 +13,7 @@ $(".background-trigger").each(function (index) {
         onEnterBack: () => {
             $(".page-background").css("background-color", $(this).css("background-color"));
             if($(this).children().length > 0) {
-                $(".dark-mode-switcher").click();
+                $(".light-mode-switcher").click();
             }
         }
     });
