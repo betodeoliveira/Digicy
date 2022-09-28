@@ -19,6 +19,11 @@ $(".background-trigger").each(function (index) {
     });
 });
 
+
+const resizeObserver = new ResizeObserver(entries => 
+    console.log('Body height changed:', entries[0].target.clientHeight)
+  )
+
 // When the page is done we need to wait the trasition animation to end before placing the triggers on the page
 $(document).ready(function () {
     setTimeout(function(){
