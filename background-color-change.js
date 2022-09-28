@@ -19,11 +19,12 @@ $(".background-trigger").each(function (index) {
     });
 });
 
-// To prevent triggers at wrong positions recalculate when page is ready
+// When the page is done we need to wait the trasition animation to end before placing the triggers on the page
 $(document).ready(function () {
+    ScrollTrigger.disable();
     setTimeout(function(){
         ScrollTrigger.refresh();
-    }, 1000);
+    }, 2500);
 });
 
 // Updates the background triggers position
