@@ -21,7 +21,6 @@ $(".background-trigger").each(function (index) {
 
 // When the page is done we need to wait the trasition animation to end before placing the triggers on the page
 $(document).ready(function () {
-    ScrollTrigger.disable();
     setTimeout(function(){
         ScrollTrigger.refresh();
     }, 2500);
@@ -29,17 +28,13 @@ $(document).ready(function () {
 
 // Updates the background triggers position
 $("#portfolio-loader-more").on( "click", function() {
-    ScrollTrigger.disable();
     setTimeout(function(){
-        ScrollTrigger.enable();
         ScrollTrigger.refresh();
     }, 1000);
 });
 
 $(".services_select-service, .button-circle").on( "click", function() {
-    ScrollTrigger.disable();
     setTimeout(function(){
-        ScrollTrigger.enable();
         ScrollTrigger.refresh();
     }, 600);
 });
