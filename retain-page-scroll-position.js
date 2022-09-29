@@ -10,5 +10,5 @@ $(window).scroll(function() {
 
   $(".reset-scroll-top").on("click", function() {
     console.log("reset scroll top");
-    window.scrollTo( 0, 0 );
+    sessionStorage.clear();
   });
