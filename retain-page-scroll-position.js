@@ -3,12 +3,15 @@ $(window).scroll(function() {
   });
   
   $(document).ready(function() {
-    if (sessionStorage.scrollTop != "undefined") {
+    if(localStorage.getItem("resetScroll") == "true"){
+      localStorage.setItem("resetScroll", "false");
+    }
+    else if (sessionStorage.scrollTop != "undefined") {
       $(window).scrollTop(sessionStorage.scrollTop);
     }
   });
 
   $(".reset-scroll-top").on("click", function() {
     console.log("reset scroll top");
-    sessionStorage.clear();
+    localStorage.setItem("resetScroll", "true");
   });
