@@ -7,3 +7,7 @@ $(window).scroll(function() {
       $(window).scrollTop(sessionStorage.scrollTop);
     }
   });
+
+  $(".reset-scroll-top").on("click", function() {
+    sessionStorage.scrollTop = 0;
+  });
