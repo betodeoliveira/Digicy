@@ -6,7 +6,7 @@ let $body = $(document.body);
         var oldWidth = $body.innerWidth();
         scrollPosition = window.pageYOffset;
         $body.css('overflow', 'hidden');
-        $body.css('position', 'fixed');
+        $body.css('position', 'relative');
         $body.css('top', `-${scrollPosition}px`);
         $body.width(oldWidth);
     });
@@ -27,7 +27,7 @@ let $body = $(document.body);
             var oldWidth = $body.innerWidth();
             scrollPosition = window.pageYOffset;
             $body.css('overflow', 'hidden');
-            $body.css('position', 'fixed');
+            $body.css('position', 'relative');
             $body.css('top', `-${scrollPosition}px`);
             $body.width(oldWidth);
         } else {
