@@ -2,7 +2,7 @@ let $body = $(document.body);
     let scrollPosition = 0;
 
     // Disables page scroll
-    $('.is-mobile-menu, .set-contact-service-empty, .contact-service-selector').on('click', function () {
+    $('.is-mobile-menu, .set-contact-service-empty, .services_install-service').on('click', function () {
         var oldWidth = $body.innerWidth();
         scrollPosition = window.pageYOffset;
         $body.css('overflow', 'hidden');
