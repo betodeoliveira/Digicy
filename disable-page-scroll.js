@@ -7,7 +7,7 @@ let $body = $(document.body);
         scrollPosition = window.pageYOffset;
         $body.css('overflow', 'hidden');
         $body.css('position', 'relative');
-        $body.css('top', `-${scrollPosition}px`);
+        // $body.css('top', `-${scrollPosition}px`);
         $body.width(oldWidth);
     });
 
@@ -16,9 +16,9 @@ let $body = $(document.body);
         if ($body.css('overflow') != 'hidden') { scrollPosition = window.pageYOffset; }
         $body.css('overflow', '');
         $body.css('position', '');
-        $body.css('top', '');
+        // $body.css('top', '');
         $body.width('');
-        $(window).scrollTop(scrollPosition);
+        // $(window).scrollTop(scrollPosition);
     });
 
     // Toggles page scroll
@@ -28,13 +28,13 @@ let $body = $(document.body);
             scrollPosition = window.pageYOffset;
             $body.css('overflow', 'hidden');
             $body.css('position', 'relative');
-            $body.css('top', `-${scrollPosition}px`);
+            // $body.css('top', `-${scrollPosition}px`);
             $body.width(oldWidth);
         } else {
             $body.css('overflow', '');
             $body.css('position', '');
-            $body.css('top', '');
+            // $body.css('top', '');
             $body.width('');
-            $(window).scrollTop(scrollPosition);
+            // $(window).scrollTop(scrollPosition);
         }
     });
