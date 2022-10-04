@@ -1,7 +1,4 @@
-
-let Webflow = Webflow || [];
-Webflow.push(function () {
-    let $body = $(document.body);
+let $body = $(document.body);
     let scrollPosition = 0;
 
     // Disables page scroll
@@ -41,4 +38,3 @@ Webflow.push(function () {
             $(window).scrollTop(scrollPosition);
         }
     });
-});
